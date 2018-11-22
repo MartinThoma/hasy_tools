@@ -382,10 +382,14 @@ def load_data(mode='fold-1', image_dim_ordering='tf'):
         raise NotImplementedError
 
 
-def imread(infilename):
+def imread(infilename, flatten=False, mode=None):
     img = Image.open(infilename)
+    if mode:
+        img = img.convert(mode)
     img.load()
     data = np.asarray(img, dtype="int32")
+    if flatten:
+        data = data.flatten()
     return data
 
 
