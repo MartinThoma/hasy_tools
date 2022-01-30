@@ -1,5 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/hasy_tools.svg)](https://badge.fury.io/py/hasy_tools)
 [![Python Support](https://img.shields.io/pypi/pyversions/hasy_tools.svg)](https://pypi.org/project/hasy_tools/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 # hasy_tools
 
@@ -22,7 +23,7 @@ It can, of course, also be installed via PyPI.
 
 ## Usage
 
-```python
+```python-repl
 >>> import hasy_tools
 >>> data = hasy_tools.load()
 >>> data.keys()

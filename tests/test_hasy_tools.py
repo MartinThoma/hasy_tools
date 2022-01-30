@@ -1,12 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+def test_load_data():
+    from hasy_tools import load_data
 
-# core modules
-import unittest
-
-
-class HasyToolsTests(unittest.TestCase):
-
-    def test_load_data(self):
-        from hasy_tools import load_data
-        data = load_data()
+    data = load_data()
